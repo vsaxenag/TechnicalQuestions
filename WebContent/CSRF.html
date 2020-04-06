@@ -3,5 +3,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <body>
 <div style="width:100%;font-size:36px;line-height:48px;background-color:navy;color:white">My Facelet Application</div>
+<ol>
+<li><b>What is it:</b>An authenticated user is tricked to issue unauthorized commands to the server who trusts this user</li>
+<li>Using this trick, attacker can issue a command to change pwd, email, or get access to whole website</li>
+<li><b>CSRF Prevention</b>:  
+	<ol>
+		<li>CSRF Token/HMAC should be validated in each requests<</li>
+		<li>The SameSite attribute can be used to control whether and how cookies are submitted in cross-site requests.</li>
+		<li>Frequent ReAuth, checks like Captcha</li>
+		<li>HTML attributes that are risky: GET, href, src</li>
+		
+	
+	</ol>
+
+</li>
+
+</ol>
 </body>
 </html>
